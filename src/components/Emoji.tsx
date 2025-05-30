@@ -5,6 +5,8 @@ const notoColorEmoji = Noto_Color_Emoji({
   weight: ["400"],
   subsets: ["emoji"],
   fallback: ["Apple Color Emoji"],
+  display: 'swap',
+  adjustFontFallback: false
 })
 
 type Props = {
