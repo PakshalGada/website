@@ -33,6 +33,7 @@ export function filterPosts(
     })
     // filter type
     .filter((post) => {
+      if (!post.type || post.type.length === 0) return true // Allow posts with no type
       const postType = post.type[0]
       return acceptType.includes(postType)
     })
